@@ -1,0 +1,132 @@
+
+<!-- <div class="col-md-6 offset-md-3">
+
+<h4>Create Doctor</h4>
+
+<form  (ngSubmit) ="onSubmit()">
+
+    <div class ="form-group">
+        <label for ="firstName"> First Name</label>
+        <input type="text" class="form-control" id ="firstName" [(ngModel)]="doctor.firstName" name ="firstName">
+    </div>
+
+    <div class ="form-group">
+        <label for="lastName" >Last Name</label>
+        <input type="text" class ="form-control" id = "lastName" [(ngModel)] ="doctor.lastName" name ="lastName">
+
+    </div>
+
+    <div class ="form-group">
+        <label for="email"> email Id</label>
+        <input type="text" class="form-control" id ="email" [(ngModel)] ="doctor.email" name ="email">
+    </div>
+    <button class ="btn btn-success" type="submit"> submit</button>
+</form>
+</div> -->
+
+
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h4 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-control {
+        border-color: #ddd;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+</style>
+
+<body>
+<div class="container">
+    <div class="form-container">
+        <h4>Create Doctor</h4>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" [(ngModel)]="doctor.firstName"
+                    name="firstName">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" [(ngModel)]="doctor.lastName"
+                    name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" class="form-control" id="department" [(ngModel)]="doctor.department"
+                    name="department">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" [(ngModel)]="doctor.description"
+                    name="description">
+            </div>
+            <div class="container">
+                
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="maleRadio" value="male"
+                            [(ngModel)]="doctor.gender">
+                        <label class="form-check-label" for="maleRadio">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="femaleRadio" value="female"
+                            [(ngModel)]="doctor.gender">
+                        <label class="form-check-label" for="femaleRadio">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" class="form-control" id="email" [(ngModel)]="doctor.email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" [(ngModel)]="doctor.phone"
+                    name="phone">
+            </div>
+
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</body>

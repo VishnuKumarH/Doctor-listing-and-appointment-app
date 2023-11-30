@@ -1,0 +1,83 @@
+<!-- <h2>View Doctor</h2>
+<div>
+    <div>
+        <label > First Name :</label>  <b>{{doctor.firstName}}</b>
+    </div>
+    <div>
+        <label > Last Name : </label> <b>{{doctor.lastName}}</b>
+    </div>
+
+    <div>
+        <label >Email Id : </label> <b>{{doctor.email}}</b>
+    </div>
+</div> -->
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+    }
+
+    b {
+        color: #333;
+    }
+</style>
+<body>
+<div class="container">
+    <h2>View Doctor</h2>
+    <div>
+        <div class="mb-3">
+            <label>First Name:</label>
+            <b>{{ doctor.firstName }}</b>
+        </div>
+        <div class="mb-3">
+            <label>Last Name:</label>
+            <b>{{ doctor.lastName }}</b>
+        </div>
+        <div class="mb-3">
+            <label>Department:</label>
+            <b>{{ doctor.department }}</b>
+        </div>
+        <div class="mb-3">
+            <label>Description:</label>
+            <b>{{ doctor.description }}</b>
+        </div>
+    
+        <div class="mb-3">
+            <label>Email Id:</label>
+            <b>{{ doctor.email }}</b>
+        </div>
+        <div class="mb-3">
+            <label>Phone:</label>
+            <b>{{ doctor.phone }}</b>
+        </div>
+        <div class="mb-3">
+            <label>Gender:</label>
+            <b>{{ doctor.gender }}</b>
+        </div>
+        <div class="mb-3">
+            <label>Rating:</label>
+            <b>{{ doctor.rating }}</b>
+        </div>
+    </div>
+</div>
+</body>
